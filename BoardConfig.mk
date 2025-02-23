@@ -36,11 +36,6 @@ TARGET_KERNEL_CONFIG := vendor/laurel_sprout-perf_defconfig
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
 BOARD_VENDORIMAGE_PARTITION_SIZE := 1073741824
 
-# Moving System to EroFS. We need space !
-BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := erofs
-# Define Pcluster size to 64Kb.
-BOARD_EROFS_PCLUSTER_SIZE := 65536
-
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
