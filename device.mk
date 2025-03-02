@@ -43,7 +43,7 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_OPTIONAL_product=false
 
 PRODUCT_PACKAGES += \
-    check_dynamic_partitions
+    check_dynamic_partitions_laurel
 
 # Retrofit Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
