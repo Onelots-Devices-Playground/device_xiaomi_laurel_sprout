@@ -43,7 +43,7 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_OPTIONAL_product=false
 
 PRODUCT_PACKAGES += \
-    check_dynamic_partitions_laurel
+    check_dynamic_partitions
 
 # Retrofit Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -93,7 +93,8 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(DEVICE_PATH)
+    $(DEVICE_PATH) \
+    hardware/google/pixel
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/laurel_sprout/laurel_sprout-vendor.mk)
