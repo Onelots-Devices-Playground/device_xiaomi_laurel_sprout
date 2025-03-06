@@ -9,7 +9,6 @@ $(call inherit-product, device/xiaomi/sm6125-common/common.mk)
 
 # EvolutionX flags
 TARGET_USES_PICO_GAPPS := true
-TARGET_HAS_UDFPS := true
 
 PRODUCT_PACKAGES += \
     RemovePackagesLaurel
